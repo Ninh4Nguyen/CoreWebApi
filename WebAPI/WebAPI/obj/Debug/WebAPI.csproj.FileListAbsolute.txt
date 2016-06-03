@@ -64,3 +64,4 @@ E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.dll
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.pdb
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\WebAPI.XML
