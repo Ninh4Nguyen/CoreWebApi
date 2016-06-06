@@ -1,13 +1,12 @@
-﻿using Utilities.Helpers;
+﻿using FluentValidation.Attributes;
+using Utilities.Helpers;
+using WebAPI.Models.Annotations;
 
 namespace WebAPI.Models.API
 {
-    public class Product
+    [Validator(typeof(AddProductValidator))]
+    public class AddProductRequest
     {
-        /// <summary>
-        /// The indentity of product
-        /// </summary>
-        public int ProductId { get; set; }
         /// <summary>
         /// The name of product
         /// </summary>

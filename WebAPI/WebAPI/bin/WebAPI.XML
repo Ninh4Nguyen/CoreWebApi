@@ -494,7 +494,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:WebAPI.Controllers.ProductsController.AddProduct(WebAPI.Models.API.Product)">
+        <member name="M:WebAPI.Controllers.ProductsController.AddProduct(WebAPI.Models.API.AddProductRequest)">
             <summary>
             Add a product
             </summary>
@@ -506,22 +506,17 @@
             </summary>
             <param name="id"></param>
         </member>
-        <member name="P:WebAPI.Models.API.Product.ProductId">
-            <summary>
-            The indentity of product
-            </summary>
-        </member>
-        <member name="P:WebAPI.Models.API.Product.ProductName">
+        <member name="P:WebAPI.Models.API.AddProductRequest.ProductName">
             <summary>
             The name of product
             </summary>
         </member>
-        <member name="P:WebAPI.Models.API.Product.Price">
+        <member name="P:WebAPI.Models.API.AddProductRequest.Price">
             <summary>
             The price of product
             </summary>
         </member>
-        <member name="P:WebAPI.Models.API.Product.ProductType">
+        <member name="P:WebAPI.Models.API.AddProductRequest.ProductType">
             <summary>
             The type which product belong to
             </summary>

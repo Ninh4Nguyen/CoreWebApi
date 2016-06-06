@@ -12,36 +12,32 @@ namespace WebAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IEnumerable<Product> GetAll()
+        public IEnumerable<AddProductRequest> GetAll()
         {
-            var result = new List<Product>();
-            result.Add(new Product()
+            var result = new List<AddProductRequest>();
+            result.Add(new AddProductRequest()
             {
-                ProductId = 1101,
                 ProductName = "iMac",
                 Price = 2000,
                 ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
-            result.Add(new Product()
+            result.Add(new AddProductRequest()
             {
-                ProductId = 1101,
                 ProductName = "iPhone 6S",
                 Price = 1050,
                 ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
-            result.Add(new Product()
+            result.Add(new AddProductRequest()
             {
-                ProductId = 1101,
                 ProductName = "Macbook",
                 Price = 1500,
                 ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
-            result.Add(new Product()
+            result.Add(new AddProductRequest()
             {
-                ProductId = 1101,
                 ProductName = "Novo LX",
                 Price = 800,
                 ProductType = CommonEnum.ProductTypes.Normal,
@@ -56,11 +52,10 @@ namespace WebAPI.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        public Product GetProduct(int id)
+        public AddProductRequest GetProduct(int id)
         {
-            return new Product()
+            return new AddProductRequest()
             {
-                ProductId = 1101,
                 ProductName = "iMac",
                 Price = 2000,
                 ProductType = CommonEnum.ProductTypes.Luxury,
@@ -72,8 +67,9 @@ namespace WebAPI.Controllers
         /// </summary>
         /// <param name="value"></param>
         [HttpPost]
-        public void AddProduct(Product p)
+        public void AddProduct(AddProductRequest request)
         {
+
         }
 
         /// <summary>
