@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using Utilities.Helpers;
+using WebAPI.Models.API;
 
 namespace WebAPI.Controllers
 {
@@ -10,9 +12,42 @@ namespace WebAPI.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IEnumerable<string> GetAll()
+        public IEnumerable<Product> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            var result = new List<Product>();
+            result.Add(new Product()
+            {
+                ProductId = 1101,
+                ProductName = "iMac",
+                Price = 2000,
+                ProductType = CommonEnum.ProductTypes.Luxury,
+            });
+
+            result.Add(new Product()
+            {
+                ProductId = 1101,
+                ProductName = "iPhone 6S",
+                Price = 1050,
+                ProductType = CommonEnum.ProductTypes.Luxury,
+            });
+
+            result.Add(new Product()
+            {
+                ProductId = 1101,
+                ProductName = "Macbook",
+                Price = 1500,
+                ProductType = CommonEnum.ProductTypes.Luxury,
+            });
+
+            result.Add(new Product()
+            {
+                ProductId = 1101,
+                ProductName = "Novo LX",
+                Price = 800,
+                ProductType = CommonEnum.ProductTypes.Normal,
+            });
+
+            return result;
         }
 
         /// <summary>
@@ -21,9 +56,15 @@ namespace WebAPI.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        public string GetProduct(int id)
+        public Product GetProduct(int id)
         {
-            return "value";
+            return new Product()
+            {
+                ProductId = 1101,
+                ProductName = "iMac",
+                Price = 2000,
+                ProductType = CommonEnum.ProductTypes.Luxury,
+            };
         }
 
         /// <summary>
@@ -31,7 +72,7 @@ namespace WebAPI.Controllers
         /// </summary>
         /// <param name="value"></param>
         [HttpPost]
-        public void AddProduct([FromBody]string value)
+        public void AddProduct(Product p)
         {
         }
 

@@ -65,3 +65,5 @@ E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.cspro
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.dll
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\obj\Debug\WebAPI.pdb
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\WebAPI.XML
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\Utilities.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\Utilities.pdb
