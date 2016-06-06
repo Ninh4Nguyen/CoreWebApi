@@ -67,9 +67,9 @@ namespace WebAPI.Controllers
         /// </summary>
         /// <param name="value"></param>
         [HttpPost]
-        public void AddProduct(AddProductRequest request)
+        public Response AddProduct(AddProductRequest request)
         {
-
+            return Response.Succeed();
         }
 
         /// <summary>

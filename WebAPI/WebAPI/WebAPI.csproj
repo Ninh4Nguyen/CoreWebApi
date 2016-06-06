@@ -166,6 +166,8 @@
     <Compile Include="Extensions\FluentValidationBodyModelValidator.cs" />
     <Compile Include="Extensions\FluentValidationModelValidator.cs" />
     <Compile Include="Extensions\FluentValidationModelValidatorProvider.cs" />
+    <Compile Include="Extensions\ModelStateExtensions.cs" />
+    <Compile Include="Extensions\ValidateModelStateFilter.cs" />
     <Compile Include="Extensions\ValidationResultExtension.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,6 +175,7 @@
     <Compile Include="Models\Annotations\AbstractBaseValidator.cs" />
     <Compile Include="Models\Annotations\AddProductValidator.cs" />
     <Compile Include="Models\API\AddProductRequest.cs" />
+    <Compile Include="Models\API\Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
