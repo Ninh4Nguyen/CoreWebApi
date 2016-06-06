@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using FluentValidation.WebApi;
+using WebAPI.Extensions;
 
 namespace WebAPI
 {
@@ -10,6 +12,7 @@ namespace WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            config.Filters.Add(new ValidateModelStateFilter());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -19,6 +22,9 @@ namespace WebAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            //Fluent Validation
+            FluentValidationModelValidatorProvider.Configure(config);
         }
     }
 }

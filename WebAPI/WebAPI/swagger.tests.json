@@ -1,10 +1,9 @@
 ﻿[
     {
-        "Key": "Product",
+        "Key": "AddProductRequest",
         "Value": {
-            "ProductId": 1101,
             "ProductName": "MacBook",
-            "Price": "1500",
+            "Price": 1500,
             "ProductType": "Luxury"
         }
     }
