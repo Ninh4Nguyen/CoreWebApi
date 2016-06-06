@@ -163,6 +163,10 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Extensions\FluentValidationBodyModelValidator.cs" />
+    <Compile Include="Extensions\FluentValidationModelValidator.cs" />
+    <Compile Include="Extensions\FluentValidationModelValidatorProvider.cs" />
+    <Compile Include="Extensions\ValidationResultExtension.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
