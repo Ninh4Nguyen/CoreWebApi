@@ -1,0 +1,7 @@
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\bin\Debug\Utilities.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\bin\Debug\Utilities.pdb
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\obj\Debug\Utilities.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\obj\Debug\Utilities.pdb
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\bin\Debug\Newtonsoft.Json.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\Utilities\bin\Debug\Newtonsoft.Json.xml
