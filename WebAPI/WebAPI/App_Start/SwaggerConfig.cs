@@ -2,6 +2,12 @@ using System.Web.Http;
 using WebActivatorEx;
 using WebAPI;
 using Swashbuckle.Application;
+using Swashbuckle.Swagger;
+using System.Collections.Generic;
+using System.IO;
+using Utilities.Extensions;
+using System.Linq;
+using System;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -108,7 +114,7 @@ namespace WebAPI
                         // If you want to post-modify "complex" Schemas once they've been generated, across the board or for a
                         // specific type, you can wire up one or more Schema filters.
                         //
-                        //c.SchemaFilter<ApplySchemaVendorExtensions>();
+                        c.SchemaFilter<TestValuesFilter>();
 
                         // Set this flag to omit schema property descriptions for any type properties decorated with the
                         // Obsolete attribute 
@@ -215,6 +221,26 @@ namespace WebAPI
                         //
                         //c.EnableOAuth2Support("test-client-id", "test-realm", "Swagger UI");
                     });
+        }
+
+        public class TestValuesFilter : ISchemaFilter
+        {
+            private static readonly List<KeyValuePair<string, object>> testData;
+            
+            static TestValuesFilter()
+            {
+                var testValues = File.ReadAllText(string.Format(@"{0}\swagger.tests.json", System.AppDomain.CurrentDomain.BaseDirectory));
+                testData = testValues.DeserializeObject<List<KeyValuePair<string, object>>>();
+            }
+
+            public void Apply(Schema schema, SchemaRegistry schemaRegistry, Type type)
+            {
+                var obj = testData.SingleOrDefault(i => i.Key == type.Name);
+                if(obj.Key != null)
+                {
+                    schema.example = obj.Value;
+                }
+            }
         }
 
         private static string GetXmlCommentsPath()

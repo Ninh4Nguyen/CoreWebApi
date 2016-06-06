@@ -1,0 +1,11 @@
+﻿[
+    {
+        "Key": "Product",
+        "Value": {
+            "ProductId": 1101,
+            "ProductName": "MacBook",
+            "Price": "1500",
+            "ProductType": "Luxury"
+        }
+    }
+]
