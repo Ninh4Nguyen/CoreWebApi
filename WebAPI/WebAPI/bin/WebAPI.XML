@@ -481,6 +481,12 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="M:WebAPI.Controllers.CategoriesController.AddCategory(WebAPI.Models.API.AddCategoryRequest)">
+            <summary>
+            Add a category
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:WebAPI.Controllers.ProductsController.GetAll">
             <summary>
             Get all products
@@ -529,6 +535,21 @@
             <param name="result">The validation result to store</param>
             <param name="modelState">The ModelStateDictionary to store the errors in.</param>
             <param name="prefix">An optional prefix. If ommitted, the property names will be the keys. If specified, the prefix will be concatenatd to the property name with a period. Eg "user.Name"</param>
+        </member>
+        <member name="P:WebAPI.Models.API.AddCategoryRequest.CategoryName">
+            <summary>
+            The name of category
+            </summary>
+        </member>
+        <member name="P:WebAPI.Models.API.AddCategoryRequest.Description">
+            <summary>
+            The description of category 
+            </summary>
+        </member>
+        <member name="P:WebAPI.Models.API.AddCategoryRequest.Image">
+            <summary>
+            The image of category
+            </summary>
         </member>
         <member name="P:WebAPI.Models.API.AddProductRequest.ProductName">
             <summary>

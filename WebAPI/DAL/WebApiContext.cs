@@ -11,6 +11,7 @@ namespace DAL
         public WebApiContext()
             : base("name=WebApiContext")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<WebApiContext, DAL.Migrations.Configuration>());
         }
 
         public virtual DbSet<Category> Categories { get; set; }
