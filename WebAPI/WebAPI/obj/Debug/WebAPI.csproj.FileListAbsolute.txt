@@ -87,3 +87,7 @@ E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\ru\FluentValidatio
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\sv\FluentValidation.resources.dll
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\tr\FluentValidation.resources.dll
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\zh-CN\FluentValidation.resources.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.xml
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
