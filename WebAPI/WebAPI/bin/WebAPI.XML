@@ -540,9 +540,19 @@
             The price of product
             </summary>
         </member>
-        <member name="P:WebAPI.Models.API.AddProductRequest.ProductType">
+        <member name="P:WebAPI.Models.API.AddProductRequest.ProductImage">
             <summary>
-            The type which product belong to
+            The image of product
+            </summary>
+        </member>
+        <member name="P:WebAPI.Models.API.AddProductRequest.Description">
+            <summary>
+            The description of product
+            </summary>
+        </member>
+        <member name="P:WebAPI.Models.API.AddProductRequest.CategoryId">
+            <summary>
+            The category indentify of product
             </summary>
         </member>
     </members>

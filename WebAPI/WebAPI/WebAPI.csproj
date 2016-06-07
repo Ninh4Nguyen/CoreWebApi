@@ -239,6 +239,10 @@
     <Content Include="swagger.tests.json" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{d27ebc90-10cc-4daa-ac43-10d15e0dafee}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utilities\Utilities.csproj">
       <Project>{41d5752a-bdc4-49d6-ae62-79188afefd36}</Project>
       <Name>Utilities</Name>

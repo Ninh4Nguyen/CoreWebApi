@@ -91,3 +91,5 @@ E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.dl
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.SqlServer.dll
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.xml
 E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\EntityFramework.SqlServer.xml
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\DAL.dll
+E:\trainning\Projects\CoreWebApi\CoreWebApi\WebAPI\WebAPI\bin\DAL.pdb

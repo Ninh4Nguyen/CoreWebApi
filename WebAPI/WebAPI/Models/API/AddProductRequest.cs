@@ -11,13 +11,25 @@ namespace WebAPI.Models.API
         /// The name of product
         /// </summary>
         public string ProductName { get; set; }
+
         /// <summary>
         /// The price of product
         /// </summary>
-        public double Price { get; set; }
+        public double? Price { get; set; }
+
         /// <summary>
-        /// The type which product belong to
+        /// The image of product
         /// </summary>
-        public CommonEnum.ProductTypes ProductType { get; set; }
+        public string ProductImage { get; set; }
+
+        /// <summary>
+        /// The description of product
+        /// </summary>
+        public string Description { get; set; }
+
+        /// <summary>
+        /// The category indentify of product
+        /// </summary>
+        public int? CategoryId { get; set; }
     }
 }
