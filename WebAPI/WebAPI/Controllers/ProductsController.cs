@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using DAL;
+using DAL.Entities;
+using System.Collections.Generic;
 using System.Web.Http;
 using Utilities.Helpers;
 using WebAPI.Models.API;
@@ -19,28 +21,24 @@ namespace WebAPI.Controllers
             {
                 ProductName = "iMac",
                 Price = 2000,
-                ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
             result.Add(new AddProductRequest()
             {
                 ProductName = "iPhone 6S",
                 Price = 1050,
-                ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
             result.Add(new AddProductRequest()
             {
                 ProductName = "Macbook",
                 Price = 1500,
-                ProductType = CommonEnum.ProductTypes.Luxury,
             });
 
             result.Add(new AddProductRequest()
             {
                 ProductName = "Novo LX",
                 Price = 800,
-                ProductType = CommonEnum.ProductTypes.Normal,
             });
 
             return result;
@@ -58,7 +56,6 @@ namespace WebAPI.Controllers
             {
                 ProductName = "iMac",
                 Price = 2000,
-                ProductType = CommonEnum.ProductTypes.Luxury,
             };
         }
 
@@ -69,7 +66,21 @@ namespace WebAPI.Controllers
         [HttpPost]
         public Response AddProduct(AddProductRequest request)
         {
-            return Response.Succeed();
+            var db = new WebApiContext();
+            var product = new Product()
+            {
+                ProductName = request.ProductName,
+                Price = request.Price,
+                ProductImage = request.ProductImage,
+                Description = request.Description
+            };
+
+            db.Products.Add(product);
+            var success = db.SaveChanges() > 0;
+
+            return success ? 
+                    Response.Succeed().AddData(product) : 
+                    Response.Fail();
         }
 
         /// <summary>
